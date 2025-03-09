@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://immersive-x.com/sitemap.xml 
