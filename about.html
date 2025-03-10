@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png">
+    
+    <!-- SEO Meta Tags -->
+    <title>About Us - IMMERSIVE X</title>
+    <meta name="description" content="Learn about IMMERSIVE X, our mission, vision, and the team behind our cutting-edge immersive technology solutions for entertainment, education, and business.">
+    <meta name="keywords" content="IMMERSIVE X, about us, immersive technology, virtual reality, augmented reality, VR, AR, XR, company mission, company vision, team">
+    <meta name="author" content="IMMERSIVE X">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://immersive-x.com/about">
+    <meta property="og:title" content="About Us - IMMERSIVE X">
+    <meta property="og:description" content="Learn about IMMERSIVE X, our mission, vision, and the team behind our cutting-edge immersive technology solutions.">
+    <meta property="og:image" content="https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://immersive-x.com/about">
+    <meta property="twitter:title" content="About Us - IMMERSIVE X">
+    <meta property="twitter:description" content="Learn about IMMERSIVE X, our mission, vision, and the team behind our cutting-edge immersive technology solutions.">
+    <meta property="twitter:image" content="https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://immersive-x.com/about">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        :root {
+            /* Modern Color Palette */
+            --primary: #3a86ff;
+            --primary-dark: #2667cc;
+            --secondary: #ff006e;
+            --secondary-dark: #d10058;
+            --accent: #8338ec;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #e9ecef;
+            --success: #38b000;
+            --warning: #ffbe0b;
+            
+            /* Typography */
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 16px rgba(0,0,0,0.1);
+            --shadow-xl: 0 12px 24px rgba(0,0,0,0.15);
+            
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+        
+        /* Animation Keyframes */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -100% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Scroll Reveal Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ff6600;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e55e00;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--dark);
+            overflow-x: hidden;
+            animation: fadeInPage 1s ease-in-out;
+        }
+
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 15px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-lg);
+            animation: slideDown 0.8s ease-in-out;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: var(--font-secondary);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .login-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* About Hero Section */
+        .about-hero {
+            background: linear-gradient(135deg, var(--dark), #2a2a5a);
+            color: white;
+            padding: 100px 5%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1626379953822-baec19c3accd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        
+        .about-hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 50%, rgba(58, 134, 255, 0.2), transparent 40%),
+                        radial-gradient(circle at 70% 20%, rgba(131, 56, 236, 0.2), transparent 40%);
+            z-index: 1;
+        }
+        
+        .about-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: var(--font-secondary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .about-hero h1::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: var(--radius-full);
+        }
+        
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 30px auto 0;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* About Section Styles */
+        .about-section {
+            padding: 80px 5%;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: var(--dark);
+            position: relative;
+            display: block;
+            width: 100%;
+            font-family: var(--font-secondary);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: var(--radius-full);
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+        }
+        
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-weight: 600;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 80px 5%;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 280px;
+            position: relative;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .member-image {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.1);
+        }
+        
+        .member-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .member-info p {
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: #555;
+            font-size: 18px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        /* Mission & Vision Section */
+        .mission-vision {
+            padding: 80px 5%;
+            background: linear-gradient(135deg, rgba(58, 134, 255, 0.05), rgba(131, 56, 236, 0.05));
+        }
+        
+        .mission-vision-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .mission-box, .vision-box {
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            background: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mission-box:hover, .vision-box:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .mission-box::before, .vision-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+        }
+        
+        .mission-box::before {
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        .vision-box::before {
+            background: linear-gradient(to bottom, var(--secondary), var(--accent));
+        }
+        
+        .mission-box h3, .vision-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .mission-box p, .vision-box p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 80px 5%;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .values-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .value-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 30px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 280px;
+            border-top: 5px solid var(--primary);
+        }
+        
+        .value-card:nth-child(2) {
+            border-top-color: var(--secondary);
+        }
+        
+        .value-card:nth-child(3) {
+            border-top-color: var(--accent);
+        }
+        
+        .value-card:nth-child(4) {
+            border-top-color: var(--success);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .value-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--primary);
+            background: rgba(58, 134, 255, 0.1);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+        }
+        
+        .value-card:nth-child(2) .value-icon {
+            color: var(--secondary);
+            background: rgba(255, 0, 110, 0.1);
+        }
+        
+        .value-card:nth-child(3) .value-icon {
+            color: var(--accent);
+            background: rgba(131, 56, 236, 0.1);
+        }
+        
+        .value-card:nth-child(4) .value-icon {
+            color: var(--success);
+            background: rgba(56, 176, 0, 0.1);
+        }
+        
+        .value-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .value-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, var(--dark), #2a2a5a);
+            text-align: center;
+            padding: 60px 5%;
+            position: relative;
+            overflow: hidden;
+            color: var(--light);
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--light);
+            margin-bottom: 20px;
+            font-family: var(--font-secondary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 0;
+            border-radius: var(--radius-full);
+        }
+
+        .footer-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition-normal);
+            font-size: 0.95rem;
+            position: relative;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: var(--transition-normal);
+        }
+
+        .footer-links a:hover {
+            color: var(--light);
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--light);
+            font-size: 1rem;
+            transition: var(--transition-normal);
+        }
+
+        .social-icons a:hover {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            transform: translateY(-3px);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: var(--dark);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: left 0.3s ease;
+                gap: 2rem;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-column {
+                align-items: center;
+            }
+            
+            .footer-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .footer-links {
+                align-items: center;
+            }
+            
+            .contact-info p {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">IMMERSIVE X</div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="blog.html">Blogs</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>About IMMERSIVE X</h1>
+            <p>We are a pioneering company dedicated to transforming how people experience digital content through cutting-edge immersive technologies. Our mission is to bridge the gap between reality and virtual worlds, creating experiences that inspire, educate, and entertain.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2 class="section-title">Our Story</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1287&q=80" alt="IMMERSIVE X Team">
+            </div>
+            <div class="about-text">
+                <h3>Pioneering the Future of Immersive Technology</h3>
+                <p>Founded in 2020, IMMERSIVE X began with a simple yet ambitious vision: to make immersive technologies accessible to everyone. What started as a small team of passionate tech enthusiasts has grown into a dynamic company at the forefront of the VR/AR revolution.</p>
+                <p>Our journey has been defined by innovation, perseverance, and a deep commitment to pushing the boundaries of what's possible. We've developed groundbreaking solutions for industries ranging from education and healthcare to entertainment and enterprise training.</p>
+                <p>Today, IMMERSIVE X stands as a leader in the immersive technology space, known for our cutting-edge products, exceptional customer service, and forward-thinking approach to solving complex challenges through virtual and augmented reality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2 class="section-title reveal">Meet Our Team</h2>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member reveal">
+                <div class="member-image">
+                    <img src="https://immersivex.mydurable.com/_next/image?url=https%3A%2F%2Fcdn.durable.co%2Fblocks%2F36MP43ZSWC29I4dfN0oSeJ0hOveRDswKbbyDzih96SS4aQuLM6wZjATKicBQ49Yh.png&w=1920&q=90" alt="Yash Rathore">
+                </div>
+                <div class="member-info">
+                    <h3>Yash Rathore</h3>
+                    <p>Founder & CEO</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/yashr05"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Yashrathore05"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/yash_rathore_r/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="team-member reveal">
+                <div class="member-image">
+                    <img src="https://immersivex.mydurable.com/_next/image?url=https%3A%2F%2Fcdn.durable.co%2Fblocks%2F5oeYUtjZJg7yR0drXldcB5EHyOOJJRa3YAsrccyLLImKB2gfEEUpSMa31sYeuIXU.jpg&w=1920&q=90" alt="Jane Smith">
+                </div>
+                <div class="member-info">
+                    <h3>Vishesh Sharma</h3>
+                    <p>SME</p>
+                    <div class="social-links">
+                        <a href="mailto:sme@immersivex.in"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="team-member reveal">
+                <div class="member-image">
+                    <img src="https://immersivex.mydurable.com/_next/image?url=https%3A%2F%2Fcdn.durable.co%2Fblocks%2F31c8NHII5UD9DYJTadkTTexFSbBwEcpFA4kyMgeqBDIVBp5Mgb4TVGbN2RiYwQEG.jpg&w=1920&q=90" alt="Michael Johnson">
+                </div>
+                <div class="member-info">
+                    <h3>Shivansh Tiwari</h3>
+                    <p>CMO</p>
+                    <div class="social-links">
+                        <a href="mailto:cmo@immersivex.in"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 4 -->
+            <div class="team-member reveal">
+                <div class="member-image">
+                    <img src="https://immersivex.mydurable.com/_next/image?url=https%3A%2F%2Fcdn.durable.co%2Fblocks%2F1cc7JcxYQyObZuZCoem9veRk9Zue5vmdAf5SY5MPioQNUCv8yAzPeSg4UoOMhcDC.jpg&w=1920&q=90" alt="Emily Chen">
+                </div>
+                <div class="member-info">
+                    <h3>Vivek</h3>
+                    <p>Hardware Engineering Head</p>
+                    <div class="social-links">
+                        <a href="mailto:cfo@immersivex.in"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <h2 class="section-title">Mission & Vision</h2>
+        <div class="mission-vision-container">
+            <div class="mission-box">
+                <h3>Our Mission</h3>
+                <p>To democratize immersive technology by creating innovative, accessible, and impactful VR/AR solutions that transform how people learn, work, and connect with the world around them.</p>
+                <p>We strive to push the boundaries of what's possible in virtual and augmented reality, developing products and experiences that solve real-world problems and create meaningful value for our customers.</p>
+            </div>
+            <div class="vision-box">
+                <h3>Our Vision</h3>
+                <p>To be the global leader in immersive technology, pioneering a future where VR and AR are seamlessly integrated into everyday life, enhancing human capabilities and creating new possibilities for communication, education, and entertainment.</p>
+                <p>We envision a world where immersive experiences are accessible to everyone, breaking down barriers of distance, ability, and understanding.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <h2 class="section-title reveal">Our Core Values</h2>
+        <div class="values-container">
+            <div class="value-card reveal">
+                <div class="value-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Innovation</h3>
+                <p>We constantly push boundaries and explore new possibilities in immersive technology, never settling for the status quo.</p>
+            </div>
+            
+            <div class="value-card reveal">
+                <div class="value-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Collaboration</h3>
+                <p>We believe in the power of diverse perspectives and teamwork to create solutions greater than the sum of their parts.</p>
+            </div>
+            
+            <div class="value-card reveal">
+                <div class="value-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Integrity</h3>
+                <p>We conduct business with honesty, transparency, and a commitment to ethical practices in all our interactions.</p>
+            </div>
+            
+            <div class="value-card reveal">
+                <div class="value-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Passion</h3>
+                <p>We are driven by a genuine enthusiasm for immersive technology and its potential to transform lives and industries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png" alt="Immersive X Logo" class="footer-logo">
+                <p class="footer-text">Experience the future of virtual reality with our cutting-edge technology and immersive solutions.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Resources</h3>
+                <div class="footer-links">
+                    <a href="#">Blog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="https://survey.immersivex.in/">Survey</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9336299321</p>
+                    <p><i class="fas fa-envelope"></i> info@immersivex.in</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2024 IMMERSIVE X TECHNOLOGIES | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+
+        // Scroll Reveal Animation
+        window.addEventListener('scroll', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            const revealsLeft = document.querySelectorAll('.reveal-left');
+            const revealsRight = document.querySelectorAll('.reveal-right');
+            
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                }
+            }
+            
+            for (let i = 0; i < revealsLeft.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = revealsLeft[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    revealsLeft[i].classList.add('active');
+                }
+            }
+            
+            for (let i = 0; i < revealsRight.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = revealsRight[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    revealsRight[i].classList.add('active');
+                }
+            }
+        });
+    </script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 0,
+            easing: 'ease',
+            once: true,
+            offset: 0,
+            disable: true
+        });
+    </script>
+</body>
+</html> 

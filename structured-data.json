@@ -1,0 +1,31 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "IMMERSIVE X",
+  "url": "https://immersivex.in",
+  "logo": "https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png",
+  "description": "IMMERSIVE X offers revolutionary virtual and augmented reality experiences. Explore our cutting-edge immersive technology solutions for entertainment, education, and business.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New Delhi",
+    "addressRegion": "Delhi",
+    "addressCountry": "India"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91 9336299321",
+    "contactType": "customer service",
+    "email": "info@immersivex.in"
+  },
+  "sameAs": [
+    "https://facebook.com/immersivex",
+    "https://twitter.com/immersivex",
+    "https://instagram.com/immersivex",
+    "https://linkedin.com/company/immersivex"
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://immersivex.in/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+} 

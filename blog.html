@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png">
+    
+    <!-- SEO Meta Tags -->
+    <title>Tech Blog - VR, AR & Emerging Technologies | IMMERSIVE X</title>
+    <meta name="description" content="Explore the latest in VR, AR, and emerging technologies. In-depth articles on immersive tech, virtual reality, augmented reality, and digital innovation.">
+    <meta name="keywords" content="VR, AR, virtual reality, augmented reality, mixed reality, technology blog, immersive technology, IMMERSIVE X">
+    <meta name="author" content="IMMERSIVE X">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://immersivex.in/blog">
+    <meta property="og:title" content="Tech Blog - VR, AR & Emerging Technologies | IMMERSIVE X">
+    <meta property="og:description" content="Discover cutting-edge insights on VR, AR, and emerging technologies. Expert analysis and in-depth coverage of the latest tech innovations.">
+    <meta property="og:image" content="/assets/blog-header.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://immersivex.in/blog">
+    <meta property="twitter:title" content="Tech Blog - IMMERSIVE X">
+    <meta property="twitter:description" content="Explore the future of technology with our expert insights on VR, AR, and emerging tech innovations.">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://immersivex.in/blog">
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <style>
+        :root {
+            --primary: #3a86ff;
+            --primary-dark: #2667cc;
+            --secondary: #ff006e;
+            --secondary-dark: #d10058;
+            --accent: #8338ec;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #e9ecef;
+            --success: #38b000;
+            --warning: #ffbe0b;
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+            --spacing-xs: 0.25rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-full: 9999px;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+            --shadow-lg: 0 8px 16px rgba(0,0,0,0.1);
+            --shadow-xl: 0 12px 24px rgba(0,0,0,0.15);
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+
+        /* Animation Keyframes */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -100% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Scroll Reveal Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            background-color: var(--light);
+            color: var(--dark);
+            overflow-x: hidden;
+            animation: fadeInPage 1s ease-in-out;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ff6600;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e55e00;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: white;
+            padding: 15px 5%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-lg);
+            animation: slideDown 0.8s ease-in-out;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            font-family: var(--font-secondary);
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .login-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: white;
+            z-index: 1001;
+        }
+        /* Blog Container Styles */
+        .blog-container {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 2rem;
+        }
+
+        .blog-container h1 {
+            font-size: 3rem;
+            color: var(--dark);
+            margin-bottom: 3rem;
+            text-align: center;
+            font-family: var(--font-secondary);
+            font-weight: 700;
+            position: relative;
+        }
+
+        .blog-container h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: var(--radius-full);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Blog Card Styles */
+        .blog-card {
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+            background-color: var(--gray);
+        }
+        
+        .blog-image.placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+        }
+        
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+        
+        .blog-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .blog-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .blog-tag {
+            background: var(--gray);
+            color: var(--dark);
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .blog-tag:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .blog-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: var(--dark);
+            line-height: 1.3;
+            font-family: var(--font-secondary);
+        }
+        
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .blog-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .blog-meta i {
+            color: var(--primary);
+        }
+        
+        .blog-excerpt {
+            margin-bottom: 1.5rem;
+            color: #555;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+        
+        .read-more {
+            display: inline-block;
+            padding: 0.5rem 1.2rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            margin-top: auto;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .read-more:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, var(--dark), #2a2a5a);
+            text-align: center;
+            padding: 60px 5%;
+            position: relative;
+            overflow: hidden;
+            color: var(--light);
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--light);
+            margin-bottom: 20px;
+            font-family: var(--font-secondary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            bottom: -10px;
+            left: 0;
+            border-radius: var(--radius-full);
+        }
+
+        .footer-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition-normal);
+            font-size: 0.95rem;
+            position: relative;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: var(--transition-normal);
+        }
+
+        .footer-links a:hover {
+            color: var(--light);
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--light);
+            font-size: 1rem;
+            transition: var(--transition-normal);
+        }
+
+        .social-icons a:hover {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            transform: translateY(-3px);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+
+        /* Animations */
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 15px 20px;
+                flex-direction: row;
+            }
+
+            .menu-icon {
+                display: block;
+                position: relative;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100vh;
+                background-color: rgba(26, 26, 46, 0.98);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: left 0.3s ease;
+                gap: 2rem;
+                padding: 20px;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .blog-container {
+                margin: 100px auto 40px;
+                padding: 1rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .blog-card {
+                margin: 0;
+            }
+
+            .blog-image {
+                height: 200px;
+            }
+
+            .blog-content {
+                padding: 1.2rem;
+            }
+
+            .blog-title {
+                font-size: 1.2rem;
+            }
+
+            .blog-excerpt {
+                font-size: 0.9rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2.5rem;
+            }
+
+            .footer-column {
+                align-items: center;
+            }
+
+            .footer-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .footer-text {
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .footer-links {
+                align-items: center;
+            }
+
+            .contact-info p {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-container {
+                margin: 80px auto 40px;
+                padding: 1rem;
+            }
+
+            .blog-container h1 {
+                font-size: 1.6rem;
+                margin-bottom: 2rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .blog-card {
+                margin: 0;
+            }
+
+            .blog-image {
+                height: 180px;
+            }
+
+            .blog-content {
+                padding: 1rem;
+            }
+
+            .blog-title {
+                font-size: 1.1rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .blog-meta {
+                font-size: 0.8rem;
+            }
+
+            .blog-excerpt {
+                font-size: 0.85rem;
+                margin-bottom: 1rem;
+            }
+
+            .read-more {
+                padding: 0.4rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">IMMERSIVE X</div>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <h1 class="reveal">Latest Tech Insights & Innovation News</h1>
+        
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog1.webp" alt="The Future of Virtual Reality" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Virtual Reality</span>
+                        <span class="blog-tag">Technology</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">The Future of Virtual Reality: Beyond Gaming</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">March 10, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Explore how VR technology is revolutionizing industries from healthcare to education, with breakthrough applications that are changing the way we live and work.</p>
+                    <a href="blogs/virtual-reality-beyond-gaming.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog2.webp" alt="AR in Retail" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Augmented Reality</span>
+                        <span class="blog-tag">Retail</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">Augmented Reality: Transforming the Retail Experience</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">March 8, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">How AR is revolutionizing shopping experiences, from virtual try-ons to interactive product demonstrations, creating a new era of retail innovation.</p>
+                    <a href="blogs/ar-transforming-retail-experience.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog 3.webp" alt="Mixed Reality Technology" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Mixed Reality</span>
+                        <span class="blog-tag">Technology</span>
+                        <span class="blog-tag">Innovation</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">Mixed Reality: The Best of Both Worlds</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">March 5, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Diving deep into mixed reality technology and how it combines the best aspects of VR and AR to create unprecedented immersive experiences.</p>
+                    <a href="blogs/mixed-reality-best-of-both-worlds.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 4 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog4.webp" alt="Metaverse Development" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Metaverse</span>
+                        <span class="blog-tag">Virtual Reality</span>
+                        <span class="blog-tag">Digital World</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">The Metaverse: Building Digital Worlds</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">March 3, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Understanding the development of the metaverse, its potential impact on society, and how businesses are preparing for this digital revolution.</p>
+                    <a href="blogs/metaverse-building-digital-worlds.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 5 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog5.webp" alt="AI in Virtual Reality" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">AI</span>
+                        <span class="blog-tag">Virtual Reality</span>
+                        <span class="blog-tag">Machine Learning</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">AI and VR: A Powerful Combination</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">February 28, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Exploring how artificial intelligence is enhancing virtual reality experiences, from adaptive environments to intelligent NPCs.</p>
+                    <a href="blogs/ai-and-vr-powerful-combination.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 6 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog6.webp" alt="VR in Healthcare" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Healthcare</span>
+                        <span class="blog-tag">Virtual Reality</span>
+                        <span class="blog-tag">Medical</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">Virtual Reality in Healthcare: Saving Lives</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">February 25, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">How VR technology is revolutionizing medical training, surgical procedures, and patient care in the healthcare industry.</p>
+                    <a href="blogs/vr-in-healthcare-saving-lives.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 7 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog7.webp" alt="AR in Education" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Education</span>
+                        <span class="blog-tag">Augmented Reality</span>
+                        <span class="blog-tag">Learning</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">Revolutionizing Education with AR</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">February 22, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Discovering how augmented reality is transforming traditional learning methods and creating interactive educational experiences.</p>
+                    <a href="blogs/revolutionizing-education-with-ar.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 8 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog8.webp" alt="Haptic Technology" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Haptics</span>
+                        <span class="blog-tag">Technology</span>
+                        <span class="blog-tag">Innovation</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">The Rise of Haptic Technology</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">February 20, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Exploring the latest developments in haptic feedback technology and its applications in virtual and augmented reality experiences.</p>
+                    <a href="blogs/rise-of-haptic-technology.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 9 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog9.webp" alt="5G and VR" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">5G</span>
+                        <span class="blog-tag">Virtual Reality</span>
+                        <span class="blog-tag">Connectivity</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">5G: Enabling Next-Gen VR Experiences</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">February 18, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">How 5G technology is unlocking new possibilities for virtual reality applications through improved speed and reduced latency.</p>
+                    <a href="blogs/5g-enabling-next-gen-vr.html" class="read-more">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Post 10 -->
+            <article class="blog-card reveal" itemscope itemtype="http://schema.org/BlogPosting">
+                <img src="assets/blog/blog10.webp" alt="Enterprise AR Solutions" class="blog-image" itemprop="image">
+                <div class="blog-content">
+                    <div class="blog-tags">
+                        <span class="blog-tag">Enterprise</span>
+                        <span class="blog-tag">Augmented Reality</span>
+                        <span class="blog-tag">Business</span>
+                    </div>
+                    <h2 class="blog-title" itemprop="headline">Enterprise AR: Transforming Business Operations</h2>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar-alt"></i> <time itemprop="datePublished">February 15, 2024</time></span>
+                        <span><i class="far fa-user"></i> <span itemprop="author">Yash Rathore</span></span>
+                    </div>
+                    <p class="blog-excerpt" itemprop="description">Case studies and insights on how enterprises are leveraging AR technology to improve efficiency and productivity.</p>
+                    <a href="blogs/enterprise-ar-transforming-business.html" class="read-more">Read More</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <img src="https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png" alt="Immersive X Logo" class="footer-logo">
+                <p class="footer-text">Experience the future of virtual reality with our cutting-edge technology and immersive solutions.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Resources</h3>
+                <div class="footer-links">
+                    <a href="blog.html">Blog</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="https://survey.immersivex.in/">Survey</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> New Delhi, India</p>
+                    <p><i class="fas fa-phone"></i> +91 9336299321</p>
+                    <p><i class="fas fa-envelope"></i> info@immersivex.in</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2024 IMMERSIVE X TECHNOLOGIES | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.body;
+
+        function toggleMenu() {
+            navLinks.classList.toggle('active');
+            const iconElement = menuIcon.querySelector('i');
+            
+            if (navLinks.classList.contains('active')) {
+                iconElement.classList.remove('fa-bars');
+                iconElement.classList.add('fa-times');
+                body.style.overflow = 'hidden';
+            } else {
+                iconElement.classList.remove('fa-times');
+                iconElement.classList.add('fa-bars');
+                body.style.overflow = '';
+            }
+        }
+
+        menuIcon.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (navLinks.classList.contains('active') && 
+                !event.target.closest('.nav-links') && 
+                !event.target.closest('.menu-icon')) {
+                toggleMenu();
+            }
+        });
+
+        // Handle image loading errors
+        document.addEventListener('DOMContentLoaded', function() {
+            const blogImages = document.querySelectorAll('.blog-image');
+            
+            blogImages.forEach(img => {
+                img.addEventListener('error', function() {
+                    this.classList.add('placeholder');
+                    this.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+                    if (!this.querySelector('.fa-image')) {
+                        const icon = document.createElement('i');
+                        icon.className = 'fas fa-image';
+                        this.appendChild(icon);
+                    }
+                });
+            });
+        });
+
+        // Scroll Reveal Animation
+        function revealElements() {
+            const reveals = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+            const windowHeight = window.innerHeight;
+            
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        // Throttle scroll event
+        let scrollTimeout;
+        window.addEventListener('scroll', function() {
+            if (!scrollTimeout) {
+                scrollTimeout = setTimeout(function() {
+                    revealElements();
+                    scrollTimeout = null;
+                }, 50);
+            }
+        });
+
+        // Initial reveal check
+        window.addEventListener('load', revealElements);
+
+        // Initialize AOS Animation
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 50,
+            disable: window.innerWidth < 768
+        });
+    </script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 0,
+            easing: 'ease',
+            once: true,
+            offset: 0,
+            disable: true
+        });
+    </script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "IMMERSIVE X Tech Blog",
+      "description": "Explore the latest in VR, AR, and emerging technologies. In-depth articles on immersive tech, virtual reality, augmented reality, and digital innovation.",
+      "url": "https://immersivex.in/blog",
+      "publisher": {
+        "@type": "Organization",
+        "name": "IMMERSIVE X",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png"
+        }
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "The Future of Virtual Reality: Beyond Gaming",
+          "description": "Explore how VR technology is revolutionizing industries from healthcare to education, with breakthrough applications that are changing the way we live and work.",
+          "image": "https://immersivex.in/assets/blog/vr-future.jpg",
+          "datePublished": "2024-03-10",
+          "author": {
+            "@type": "Person",
+            "name": "Yash Rathore"
+          },
+          "url": "https://immersivex.in/blog/future-of-vr-beyond-gaming"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Augmented Reality: Transforming the Retail Experience",
+          "description": "How AR is revolutionizing shopping experiences, from virtual try-ons to interactive product demonstrations, creating a new era of retail innovation.",
+          "image": "https://immersivex.in/assets/blog/ar-retail.jpg",
+          "datePublished": "2024-03-08",
+          "author": {
+            "@type": "Person",
+            "name": "Yash Rathore"
+          },
+          "url": "https://immersivex.in/blog/ar-transforming-retail"
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Mixed Reality: The Best of Both Worlds",
+          "description": "Diving deep into mixed reality technology and how it combines the best aspects of VR and AR to create unprecedented immersive experiences.",
+          "image": "https://immersivex.in/assets/blog/mixed-reality.jpg",
+          "datePublished": "2024-03-05",
+          "author": {
+            "@type": "Person",
+            "name": "Yash Rathore"
+          },
+          "url": "https://immersivex.in/blog/mixed-reality-best-of-both-worlds"
+        }
+      ]
+    }
+    </script>
+</body>
+</html> 

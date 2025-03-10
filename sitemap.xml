@@ -1,27 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+        http://www.google.com/schemas/sitemap-image/1.1
+        http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
   <url>
-    <loc>https://immersive-x.com/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://immersivex.in/</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cdn.durable.co/blocks/1eLjkrUnmRYk6bVKi7yJVNg17MIvCIRGOAgo5Kk9w9RukQ11susqNKEY5t1FnY5H.png</image:loc>
+      <image:title>IMMERSIVE X Logo</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://immersive-x.com/products</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://immersivex.in/products</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://immersivex.mydurable.com/_next/image?url=https%3A%2F%2Fcdn.durable.co%2Fshutterstock%2F29QWT5VRIifa6Su75fOHbYreS3YYJzhbPZxXilW0Gu4YoBIpbSdI4kEWwI1bRDU8.jpeg</image:loc>
+      <image:title>VR Headset</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://immersive-x.com/about</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://immersivex.in/about</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://immersive-x.com/contact</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://immersivex.in/contact</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://immersivex.in/blog</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://immersivex.in/assets/blog/vr-future.jpg</image:loc>
+      <image:title>The Future of Virtual Reality</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://immersivex.in/assets/blog/ar-retail.jpg</image:loc>
+      <image:title>AR in Retail</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://immersivex.in/survey</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://immersivex.in/terms</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://immersivex.in/privacy</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://immersivex.in/faq</loc>
+    <lastmod>2024-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset> 

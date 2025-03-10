@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
 
-Sitemap: https://immersive-x.com/sitemap.xml 
+Sitemap: https://immersivex.in/sitemap.xml
+
+# Crawl-delay: 10 
